@@ -1,0 +1,28 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Buttontwo from '../components/vue/buttontwo.vue';
+import Info from '../components/vue/Info.vue';
+import Par_impar from '../components/vue/Par_impar.vue';
+import Card from '../components/Card.astro';
+
+---
+
+<Layout title="Welcome to Astro.">
+	<h1>Componentes Vue en AStro</h1>
+	<div>
+		<Par_impar client:load/>
+	</div>
+	<div>
+		<Buttontwo client:load/>
+	</div>
+	<div class="mt-5">
+		<Info title="Información1" information='Primer Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quia omnis quam earum iure vel' client:load/>
+		<Info title="Información2" information='Segundo Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quia omnis quam earum iure vel' client:load/>
+		<Info title='Informacion3' information='Tercer Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quia omnis quam earum iure vel' client:load/>
+	</div>
+
+	
+	
+</Layout>
+
+
