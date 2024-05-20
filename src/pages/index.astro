@@ -3,12 +3,18 @@ import Layout from '../layouts/Layout.astro';
 import Buttontwo from '../components/vue/buttontwo.vue';
 import Info from '../components/vue/Info.vue';
 import Par_impar from '../components/vue/Par_impar.vue';
+import Tareas from '../components/vue/Tareas.vue';
 import Card from '../components/Card.astro';
 
 ---
 
 <Layout title="Welcome to Astro.">
 	<h1>Componentes Vue en AStro</h1>
+	<div class="bg-blue-200 p-10">
+		<Tareas client:load/>
+	</div>
+	
+
 	<div>
 		<Par_impar client:load/>
 	</div>
